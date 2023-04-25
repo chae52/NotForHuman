@@ -23,8 +23,8 @@ export const GlobalStyle = createGlobalStyle`
    }
    .profile_container{
       overflow: hidden;
-      width:400px;
-      height:400px;
+      width:300px;
+      height:300px;
       border-radius:70%;
       position: absolute;
       margin-left:100px;      
@@ -35,8 +35,8 @@ export const GlobalStyle = createGlobalStyle`
    .profile{
       background-image: url('https://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg');
       background-size: 100% || contain || cover;
-      width:400px;
-      height:400px;
+      width:300px;
+      height:300px;
       background-position: center center;
       position: absolute;
    }
