@@ -1,28 +1,41 @@
 import Header from '../components/Header'
+import { useDataContext } from '../Context'
+import { useNavigate } from 'react-router-dom'
 import '../pages/write.css'
-const submit = (e) => {
+const submit = (e, data, setData, navigate) => {
   e.preventDefault()
+  navigate('/')
   const name = document.querySelector('.namebox').value
-  const password = document.querySelector('.namebox').value
   const title = document.querySelector('.title').value
   const image = document.querySelector('.image').value
   const category = document.querySelector('.category').value
   const text = document.querySelector('.textbox').value
-  const data = {
-    name,
-    password,
-    title,
-    image,
-    category,
-    text,
-  }
+
+  setData([
+    ...data,
+    {
+      id: data.length + 1,
+      writer: name,
+      title,
+      image,
+      category,
+      contents: text,
+    },
+  ])
   console.log(data)
 }
 const Write = () => {
+  const { data, setData } = useDataContext()
+  const navigate = useNavigate()
   return (
     <div>
       <Header />
-      <form className="writepage" onSubmit={submit}>
+      <form
+        className="writepage"
+        onSubmit={(e) => {
+          submit(e, data, setData, navigate)
+        }}
+      >
         <div className="writebox">
           <input className="namebox" placeholder="이름을 입력하세요" />
           <input className="namebox" placeholder="비밀번호를 입력하세요" />
