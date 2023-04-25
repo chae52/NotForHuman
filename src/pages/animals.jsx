@@ -76,18 +76,48 @@ const Animals = (data, setData) => {
   function postWrite() {
     window.location.href = '/write'
   }
+  let tovar=0
+  function toPlant() {
+    if (tovar%2==0){
+    var circle1 = document.getElementById('background')
+    circle1.style.backgroundColor="#B3FF98"
+
+    var texthead=document.getElementById('texthead')
+    texthead.innerText='PLANTS'
+
+    var mbutton=document.getElementById('moveButton')
+    mbutton.style.backgroundImage="url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGxEoL%2FbtscGItzMZZ%2FJjlJGmvCPY8bdjge7NMQDK%2Fimg.png')"
+
+    var pfile=document.getElementById('profile')
+    pfile.style.backgroundImage="url('https://newsimg.sedaily.com/2019/04/06/1VHREQ5SU7_1.jpg')"
+    tovar=tovar+1
+    }else{
+        var circle1 = document.getElementById('background')
+    circle1.style.backgroundColor="#FFDC98"
+
+    var texthead=document.getElementById('texthead')
+    texthead.innerText='ANIMALS'
+
+    var mbutton=document.getElementById('moveButton')
+    mbutton.style.backgroundImage="url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQv7N2%2FbtscCBBQNeW%2F8BjRfYT0BmxHkNdXmpwgaK%2Fimg.png')"
+
+    var pfile=document.getElementById('profile')
+    pfile.style.backgroundImage="url('https://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg')"
+    tovar=tovar+1
+    }
+  }
 
   return (
     <div id="">
       <Header />
       <div>
-        <span class="background"></span>
+        <span id="background"></span>
         <div class="profile_container">
-          <div class="profile"></div>
+          <div id="profile"></div>
         </div>
 
-        <h1>ANIMALS</h1>
-        <button id="b">ToPlant</button>
+        <h1 id='texthead'>ANIMALS</h1>
+        <div id='moveButton' onClick={() => toPlant()}></div>
       </div>
 
       <div id="mainPostListArea">

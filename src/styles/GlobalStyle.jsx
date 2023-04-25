@@ -1,6 +1,15 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+   #moveButton{
+    position:absolute;
+    z-index:30;
+    background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FQv7N2%2FbtscCBBQNeW%2F8BjRfYT0BmxHkNdXmpwgaK%2Fimg.png');
+    width:200px;
+    height:100px;
+    margin-left:1000px;
+    margin-top:50px;
+   }
    body{
      margin : 0;
      font-family: 'Pretendard';
@@ -13,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
     margin-left:540px;
     margin-top:130px;
    }
-   .background{
+   #background{
       height: 250px;
       width: 100%;
       background-color: #FFDC98;
@@ -32,7 +41,7 @@ export const GlobalStyle = createGlobalStyle`
       z-index:2;
    }
 
-   .profile{
+   #profile{
       background-image: url('https://image.dongascience.com/Photo/2020/03/5bddba7b6574b95d37b6079c199d7101.jpg');
       background-size: 100% || contain || cover;
       width:300px;
