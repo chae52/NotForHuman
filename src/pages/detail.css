@@ -5,6 +5,7 @@ body {
 
 .cover, .main {
     display: flex;
+    gap: 10px;
     justify-content: space-between;
     flex-direction: row;
     margin: 1%;
@@ -18,6 +19,8 @@ span {
     border-radius: 10px;
     box-sizing: border-box;
     align-items: center;
+    margin: auto;
+    padding: 10px;
 }
 
 .main span {
@@ -25,8 +28,6 @@ span {
 }
 
 .Title {
-    margin: auto;
-    padding: 10px;
 }
 
 .Title p {
@@ -34,24 +35,18 @@ span {
 }
 
 .Writer {
-    margin: auto;
-    padding: 10px;
 }
 
-.image {
+.Image {
     background-color: transparent;
     border-radius: 10px;
-    margin: auto;
 }
-.image img {
-    position: static;
+.Image img {
     width: 100%;
     height: 100%;
     border-radius: 10px;
 }
 
-.Contents {
+.Description {
     align-items: baseline;
-    margin: auto;
-    padding: 10px;
 }
