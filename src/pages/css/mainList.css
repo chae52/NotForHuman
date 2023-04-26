@@ -34,4 +34,11 @@
     right: 0px;
     bottom: 0px;
     margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#icon{
+	width: 70px;
+    height: 70px;
 }

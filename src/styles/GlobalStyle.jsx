@@ -53,6 +53,36 @@ export const GlobalStyle = createGlobalStyle`
     position:absolute;
     z-index:11;
    }
+
+   #newbackground{
+      height: 250px;
+      width: 100%;
+      background-color: #B3FF98;
+      display:inline-block;
+      position:absolute;
+      z-index:1;
+   }
+
+  #newprofile{
+        background-image: url('https://newsimg.sedaily.com/2019/04/06/1VHREQ5SU7_1.jpg');
+        background-size: 100% || contain || cover;
+        width:300px;
+        height:300px;
+        background-position: center center;
+        position: absolute;
+     }
+
+  #newmoveButton{
+    position:absolute;
+    z-index:30;
+    background-image: url('https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FGxEoL%2FbtscGItzMZZ%2FJjlJGmvCPY8bdjge7NMQDK%2Fimg.png');
+    width:200px;
+    height:100px;
+    margin-left:1000px;
+    margin-top:50px;
+   }
+
+
  }
 `;
 
